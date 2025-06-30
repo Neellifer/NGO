@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer | HopeMakers</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdf4;
+        }
+    </style>
+</head>
+<body class="text-gray-900 flex items-center justify-center min-h-screen">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-md py-4 absolute top-0 left-0 w-full z-10">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-emerald-700 rounded-lg p-2 hover:bg-emerald-50 transition duration-300">HopeMakers</a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="index.html" class="text-gray-600 hover:text-emerald-700 transition duration-300 font-medium">Our Mission</a>
+                <a href="volunteer.html" class="text-emerald-700 font-medium">Volunteer</a>
+                <a href="#" class="text-gray-600 hover:text-emerald-700 transition duration-300 font-medium">Impact</a>
+                <a href="index.html#donate" class="text-gray-600 hover:text-emerald-700 transition duration-300 font-medium">Donate</a>
+            </div>
+            <button class="md:hidden text-gray-600 hover:text-emerald-700 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Volunteer Signup Section -->
+    <section class="py-24 w-full flex justify-center items-center">
+        <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
+            <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Become a HopeMaker Volunteer</h1>
+            <p class="text-gray-600 mb-6 text-center">Your time and skills can make a profound difference.</p>
+            <form action="thankyou.html" method="GET">
+                <div class="mb-4">
+                    <label for="fullName" class="block text-gray-700 text-sm font-bold mb-2">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-emerald-300" placeholder="Jane Doe" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-emerald-300" placeholder="jane@example.com" required>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-emerald-300" placeholder="+1 (123) 456-7890">
+                </div>
+                <div class="mb-4">
+                    <label for="interest" class="block text-gray-700 text-sm font-bold mb-2">Area of Interest</label>
+                    <select id="interest" name="interest" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-emerald-300" required>
+                        <option value="">Select an area...</option>
+                        <option value="education">Education Support</option>
+                        <option value="health">Health Campaigns</option>
+                        <option value="environment">Environmental Projects</option>
+                        <option value="events">Event Support</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Tell us about your skills and availability (Optional)</label>
+                    <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-emerald-300" placeholder="e.g., teaching, coding, 5 hours/week..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-emerald-500 focus:ring-opacity-50">
+                    Sign Up to Volunteer
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 w-full">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <a href="index.html" class="text-xl font-bold text-white mb-4 md:mb-0">HopeMakers</a>
+                <div class="space-x-6">
+                    <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition duration-300">Terms of Use</a>
+                    <a href="volunteer.html" class="hover:text-white transition duration-300">Get Involved</a>
+                </div>
+            </div>
+            <p class="text-sm">&copy; 2025 HopeMakers. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
