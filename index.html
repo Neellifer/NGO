@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HopeMakers | Building a Brighter Future</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter for a professional look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0fdf4; /* Very light green background */
+        }
+        .hero-background {
+            /* Placeholder image related to community/charity/environment */
+            background-image: url('https://placehold.co/1920x800/10b981/ffffff?text=Empowering+Communities');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-md py-4">
+        <nav class="container mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold text-emerald-700 rounded-lg p-2 hover:bg-emerald-50 transition duration-300">HopeMakers</a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="index.html" class="text-emerald-700 font-medium">Our Mission</a>
+                <a href="volunteer.html" class="text-gray-600 hover:text-emerald-700 transition duration-300 font-medium">Volunteer</a>
+                <a href="#" class="text-gray-600 hover:text-emerald-700 transition duration-300 font-medium">Impact</a>
+                <a href="#donate" class="text-gray-600 hover:text-emerald-700 transition duration-300 font-medium">Donate</a>
+            </div>
+            <!-- Mobile Menu Button (Hamburger) -->
+            <button class="md:hidden text-gray-600 hover:text-emerald-700 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-background text-white py-20 md:py-32 flex items-center justify-center min-h-screen-75">
+        <div class="container mx-auto px-4 text-center bg-black bg-opacity-60 rounded-xl p-8 md:p-12 shadow-2xl max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down drop-shadow-lg">
+                Empowering Lives, Inspiring Change
+            </h1>
+            <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-up drop-shadow-md">
+                Join HopeMakers in our mission to create sustainable impact and foster well-being across communities.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <!-- Donation Button -->
+                <a href="#donate" class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-emerald-500 focus:ring-opacity-50">
+                    Donate Now
+                </a>
+                <!-- Volunteer Button -->
+                <a href="volunteer.html" class="inline-block bg-white hover:bg-gray-100 text-emerald-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-white focus:ring-opacity-50">
+                    Become a Volunteer
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Mission</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                At HopeMakers, we believe in the power of collective action to address pressing societal challenges. Our mission is to provide essential resources, champion education, and advocate for sustainable development, ensuring a healthier and more equitable world for everyone. We focus on long-term solutions that empower individuals and communities to thrive independently.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl text-emerald-700 mb-3">Education & Empowerment</h3>
+                    <p class="text-gray-600">Providing access to quality education and skill-building programs.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl text-emerald-700 mb-3">Health & Well-being</h3>
+                    <p class="text-gray-600">Improving health outcomes and access to medical care for underserved populations.</p>
+                </div>
+                <div class="p-6 bg-gray-50 rounded-lg shadow-md">
+                    <h3 class="font-bold text-xl text-emerald-700 mb-3">Environmental Stewardship</h3>
+                    <p class="text-gray-600">Promoting sustainable practices and protecting our planet for future generations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section (Simple form for demonstration) -->
+    <section id="donate" class="bg-emerald-500 text-white py-16">
+        <div class="container mx-auto px-4 text-center max-w-2xl">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Make a Difference Today</h2>
+            <p class="text-lg opacity-90 mb-8">Your contribution, no matter how small, helps us continue our vital work.</p>
+            <form action="thankyou.html" method="GET" class="bg-white p-8 rounded-xl shadow-lg text-gray-900">
+                <div class="mb-4">
+                    <label for="amount" class="block text-gray-700 text-sm font-bold mb-2 text-left">Donation Amount</label>
+                    <input type="number" id="amount" name="amount" min="5" value="50" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-emerald-300" required>
+                </div>
+                <div class="mb-6">
+                    <label for="email_donate" class="block text-gray-700 text-sm font-bold mb-2 text-left">Your Email (Optional)</label>
+                    <input type="email" id="email_donate" name="email_donate" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-emerald-300" placeholder="Optional for receipt">
+                </div>
+                <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-emerald-500 focus:ring-opacity-50">
+                    Donate Now
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <a href="index.html" class="text-xl font-bold text-white mb-4 md:mb-0">HopeMakers</a>
+                <div class="space-x-6">
+                    <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition duration-300">Terms of Use</a>
+                    <a href="volunteer.html" class="hover:text-white transition duration-300">Get Involved</a>
+                </div>
+            </div>
+            <p class="text-sm">&copy; 2025 HopeMakers. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
